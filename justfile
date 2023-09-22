@@ -15,6 +15,7 @@ setup:
 
 run:
     set -e;
+    source .venv/bin/activate;
     woke init pytypes;
     rg 'from __future' pytypes;
 
